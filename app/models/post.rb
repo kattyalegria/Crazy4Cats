@@ -4,5 +4,5 @@ class Post < ApplicationRecord
   has_many :reactions, dependent: :destroy
   #accepts_nested_attributes_for :comments, reject_if: :no_name_category
 
-  Kinds = %w[like deslike].freeze
+  Kinds = %w[like dislike].freeze
 end
